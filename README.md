@@ -1,6 +1,6 @@
 # AI Boulder Tech - Landing Page
 
-A modern landing page for AI + n8n Agents built with React, Node.js, and Tailwind CSS.
+A modern, static landing page for AI + n8n Agents built with React and Tailwind CSS.
 
 ## Features
 
@@ -8,12 +8,11 @@ A modern landing page for AI + n8n Agents built with React, Node.js, and Tailwin
 - **Responsive**: Mobile-first design that works on all devices
 - **Fast Performance**: Optimized React components and Tailwind CSS
 - **SEO Optimized**: Meta tags and structured content
-- **Contact Forms**: Backend API for handling form submissions
+- **Static Hosting**: No backend required - deploy anywhere
 
 ## Tech Stack
 
 - **Frontend**: React 18, Tailwind CSS
-- **Backend**: Node.js, Express
 - **Styling**: Tailwind CSS with custom components
 - **Icons**: Heroicons (SVG)
 - **Fonts**: Inter (Google Fonts)
@@ -27,26 +26,23 @@ A modern landing page for AI + n8n Agents built with React, Node.js, and Tailwin
 
 ### Installation
 
-1. Install dependencies for both frontend and backend:
+1. Install dependencies:
 ```bash
-npm run install-all
+npm run install-deps
 ```
 
-2. Start the development servers:
+2. Start the development server:
 ```bash
-npm run dev
+npm start
 ```
 
-This will start:
-- Frontend React app on http://localhost:3000
-- Backend Express server on http://localhost:5000
+This will start the React app on http://localhost:3000
 
-### Individual Commands
+### Available Commands
 
-- **Start backend only**: `npm run server`
-- **Start frontend only**: `npm run client`
+- **Start development server**: `npm start`
 - **Build for production**: `npm run build`
-- **Start production server**: `npm start`
+- **Run tests**: `npm test`
 
 ## Project Structure
 
@@ -57,9 +53,9 @@ This will start:
 │   │   ├── components/    # React components
 │   │   ├── index.css      # Tailwind CSS
 │   │   └── index.js       # React entry point
-│   └── package.json       # Frontend dependencies
-├── server.js              # Express backend
-├── package.json           # Backend dependencies
+│   ├── build/             # Production build
+│   └── package.json       # Dependencies
+├── package.json           # Root scripts
 └── README.md             # This file
 ```
 
@@ -78,11 +74,6 @@ This will start:
 - **FAQ**: Frequently asked questions
 - **FinalCTA**: Final call-to-action
 - **Footer**: Links and contact info
-
-## API Endpoints
-
-- `POST /api/contact` - Contact form submission
-- `POST /api/diagnostic` - Diagnostic request form
 
 ## Customization
 
@@ -112,12 +103,6 @@ The built files will be in `client/build/`. Deploy this directory to any static 
 - AWS S3 + CloudFront
 - GitHub Pages
 
-### Environment Variables
-Create a `.env` file in the root directory:
-```
-PORT=5000
-NODE_ENV=production
-```
 
 ## License
 
