@@ -1,3 +1,4 @@
+import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
 import ValueProps from "@/components/landing/ValueProps";
 import WhatWeDo from "@/components/landing/WhatWeDo";
@@ -15,6 +16,7 @@ import Footer from "@/components/landing/Footer";
 export default function Home() {
   return (
     <div className="font-sans">
+      <Header />
       <Hero />
       <ValueProps />
       <WhatWeDo />

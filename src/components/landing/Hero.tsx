@@ -1,31 +1,36 @@
 export default function Hero() {
   return (
-    <section className="px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-16 sm:py-24 md:py-28">
-      <div className="max-w-5xl mx-auto text-center">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight">
-          AI + n8n Agents that get real work done.
-        </h1>
-        <p className="mt-5 text-base sm:text-lg md:text-xl muted">
-          Automate processes, connect your tools, and let your agents handle the busy work for your team.
-        </p>
+    <section className="bg-gradient-to-br from-blue-50 to-indigo-100 pt-32 pb-20">
+      <div className="container-custom">
+        <div className="text-center max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            AI + n8n Agents that get{' '}
+            <span className="text-primary">real work done</span>
+          </h1>
+          
+          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            We design, deploy, and operate autonomous agents built on n8n (powered by LLMs) 
+            that get real work done across your entire stack.
+          </p>
 
-        <p className="mt-6 text-sm sm:text-base muted max-w-3xl mx-auto">
-          We design, deploy, and operate autonomous agents built on n8n (powered by LLMs) that read data, make decisions, and take action across your stack — APIs, DBs, Sheets, Slack, CRMs, and more.
-        </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href="#contact"
+              className="btn-primary px-8 py-3 text-lg"
+            >
+              Get a quick diagnostic →
+            </a>
+            <a
+              href="#use-cases"
+              className="btn-secondary px-8 py-3 text-lg"
+            >
+              See use cases →
+            </a>
+          </div>
 
-        <div className="mt-8 flex items-center justify-center gap-3 sm:gap-4">
-          <a
-            href="#contact"
-            className="inline-flex items-center justify-center btn-primary text-sm sm:text-base"
-          >
-            Get a quick diagnostic →
-          </a>
-          <a
-            href="#use-cases"
-            className="inline-flex items-center justify-center btn-secondary text-sm sm:text-base"
-          >
-            See use cases →
-          </a>
+          <p className="text-sm text-gray-500 mt-8">
+            Trusted by teams at fast-growing companies
+          </p>
         </div>
       </div>
     </section>

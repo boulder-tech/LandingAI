@@ -1,38 +1,33 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
   title: {
-    default: "LandingAI — AI + n8n Agents that get real work done",
-    template: "%s — LandingAI",
+    default: "AI Boulder Tech — AI + n8n Agents that get real work done",
+    template: "%s — AI Boulder Tech",
   },
   description:
-    "We design, deploy, and operate autonomous agents built on n8n (powered by LLMs) to automate workflows across your stack.",
-  metadataBase: new URL("https://yourstartup.com"),
+    "We design, deploy, and operate autonomous agents built on n8n (powered by LLMs) that get real work done across your entire stack.",
+  metadataBase: new URL("https://ai.bouldertech.fi"),
   openGraph: {
-    title: "LandingAI — AI + n8n Agents that get real work done",
+    title: "AI Boulder Tech — AI + n8n Agents that get real work done",
     description:
-      "Automate processes, connect your tools, and let your agents handle the busy work for your team.",
+      "We design, deploy, and operate autonomous agents built on n8n (powered by LLMs) that get real work done across your entire stack.",
     url: "/",
-    siteName: "LandingAI",
+    siteName: "AI Boulder Tech",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "LandingAI — AI + n8n Agents that get real work done",
+    title: "AI Boulder Tech — AI + n8n Agents that get real work done",
     description:
-      "Automate processes, connect your tools, and let your agents handle the busy work for your team.",
+      "We design, deploy, and operate autonomous agents built on n8n (powered by LLMs) that get real work done across your entire stack.",
   },
 };
 
@@ -44,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} font-sans antialiased`}
       >
         {children}
       </body>
