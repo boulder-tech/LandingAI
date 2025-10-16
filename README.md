@@ -1,113 +1,36 @@
-# AI Boulder Tech - Landing Page
-
-A modern, static landing page for AI + n8n Agents built with React and Tailwind CSS.
-
-## Features
-
-- **Modern Design**: Clean, professional UI with smooth animations
-- **Responsive**: Mobile-first design that works on all devices
-- **Fast Performance**: Optimized React components and Tailwind CSS
-- **SEO Optimized**: Meta tags and structured content
-- **Static Hosting**: No backend required - deploy anywhere
-
-## Tech Stack
-
-- **Frontend**: React 18, Tailwind CSS
-- **Styling**: Tailwind CSS with custom components
-- **Icons**: Heroicons (SVG)
-- **Fonts**: Inter (Google Fonts)
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
-### Prerequisites
+First, run the development server:
 
-- Node.js (v16 or higher)
-- npm or yarn
-
-### Installation
-
-1. Install dependencies:
 ```bash
-npm run install-deps
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-2. Start the development server:
-```bash
-npm start
-```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-This will start the React app on http://localhost:3000
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### Available Commands
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-- **Start development server**: `npm start`
-- **Build for production**: `npm run build`
-- **Run tests**: `npm test`
+## Learn More
 
-## Project Structure
+To learn more about Next.js, take a look at the following resources:
 
-```
-├── client/                 # React frontend
-│   ├── public/            # Static assets
-│   ├── src/
-│   │   ├── components/    # React components
-│   │   ├── index.css      # Tailwind CSS
-│   │   └── index.js       # React entry point
-│   ├── build/             # Production build
-│   └── package.json       # Dependencies
-├── package.json           # Root scripts
-└── README.md             # This file
-```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Components
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-- **Header**: Navigation with scroll effects
-- **Hero**: Main landing section with CTAs
-- **ValueProps**: Key benefits and features
-- **UseCases**: Detailed use case examples
-- **HowItWorks**: 3-step process explanation
-- **WhyN8n**: Benefits of n8n + LLMs
-- **Security**: Security and compliance features
-- **Results**: Expected outcomes and metrics
-- **Plans**: Pricing tiers
-- **Testimonials**: Client testimonials
-- **FAQ**: Frequently asked questions
-- **FinalCTA**: Final call-to-action
-- **Footer**: Links and contact info
+## Deploy on Vercel
 
-## Customization
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-### Colors
-Edit `client/tailwind.config.js` to customize the color scheme:
-- Primary colors: Used for CTAs and highlights
-- Secondary colors: Used for text and backgrounds
-
-### Content
-All content is in the React components. Edit the text directly in:
-- `client/src/components/` files
-
-### Styling
-Custom styles are in `client/src/index.css` using Tailwind's `@layer` directive.
-
-## Deployment
-
-### Build for Production
-```bash
-npm run build
-```
-
-### Deploy
-The built files will be in `client/build/`. Deploy this directory to any static hosting service like:
-- Vercel
-- Netlify
-- AWS S3 + CloudFront
-- GitHub Pages
-
-
-## License
-
-MIT License - feel free to use this template for your own projects.
-
-## Support
-
-For questions or support, contact: hello@ai.bouldertech.fi
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --accent: #0C32CC; /* BoulderTech accent */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* Layout helpers */
+.container-page {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Accent and component primitives (BoulderTech look) */
+a {
+  color: var(--accent);
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  color: white;
+  border-radius: 9999px;
+  padding: 0.75rem 1.25rem;
+  font-weight: 500;
+  transition: opacity .15s ease, transform .15s ease;
+}
+.btn-primary:hover {
+  opacity: 0.92;
+}
+.btn-primary:active {
+  transform: translateY(1px);
+}
+
+.btn-secondary {
+  border: 1px solid color-mix(in oklab, var(--accent) 25%, transparent);
+  color: var(--accent);
+  border-radius: 9999px;
+  padding: 0.75rem 1.25rem;
+  font-weight: 500;
+  background: color-mix(in oklab, var(--accent) 6%, transparent);
+  transition: background-color .15s ease, transform .15s ease;
+}
+.btn-secondary:hover {
+  background: color-mix(in oklab, var(--accent) 10%, transparent);
+}
+.btn-secondary:active {
+  transform: translateY(1px);
+}
+
+.section-title {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: auto;
+  height: 3px;
+  width: 56px;
+  bottom: 0;
+  border-radius: 9999px;
+  background: var(--accent);
+}
+
+.card {
+  border: 1px solid color-mix(in oklab, var(--foreground) 12%, transparent);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  background: white;
+}
+
+.muted {
+  color: color-mix(in oklab, var(--foreground) 70%, white);
+}
